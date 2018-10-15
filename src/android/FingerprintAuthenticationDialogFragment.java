@@ -142,6 +142,8 @@ public class FingerprintAuthenticationDialogFragment extends DialogFragment
     @Override
     public void onPause() {
         super.onPause();
+        // https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth/issues/52#issuecomment-378936467
+        dismissAllowingStateLoss();
         mFingerprintUiHelper.stopListening();
     }
 
