@@ -1,4 +1,5 @@
 
+This fork fixes crashes happening on some mobile devices
 
 # cordova-plugin-keychain-touch-id 
 
